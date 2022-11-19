@@ -57,6 +57,10 @@ body {
                     list-style: none;
                 }
 
+textarea {
+    resize: none;
+}
+
 .list {
     display: flex;
     align-items: baseline;
@@ -299,13 +303,13 @@ body {
     opacity: 0;
     pointer-events: none;
 }
-
+/* Modal screen*/
     .modal {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 15px;
+        padding: 40px;
 
         min-width: 528px;
         min-height: 581px;
@@ -333,9 +337,109 @@ body {
         border-radius: 50%;
         background-color: var(--background-color);
         fill: var(--studio-nav-color);
+}
 
+            .modal-close-icon:hover,
+            .modal-close-icon:focus {
+            color: var(--link-color);
             }
-                 
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 0;
+
+    columns: var(--text-color);
+}
+
+.form {
+    width: 528px;
+    height: 581px;
+    
+}
+
+.form-field {
+display: flex;
+position: relative;
+flex-direction: column;
+
+text-align: left;
+}
+
+.form-comment{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+    
+    }
+
+.comment-area {
+    padding: 6px 15px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+.form-field input {
+    margin: 0;
+    padding: 6px 35px;
+    margin-bottom: 10px;
+
+    height: 40px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+   }
+
+                .form-field input:hover,
+                .form-field input:focus {
+                        color: var(--link-color);
+                }
+
+.form-field label {
+    margin-bottom: 4px;
+}
+
+.form-field input::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+} 
+
+.label-link {
+color: var(--link-color);
+}
+
+.modal-icon {
+position: absolute;
+left: 15px;
+top: 42px;
+fill: currentColor;
+}
+
+.submit-button {
+    margin-top: 30px;
+    padding: 10px 52px;
+
+    width: 200px;
+    height: 50px;
+
+    letter-spacing: 0.06em;
+
+    color: var(--background-color);
+    background-color: var(--main-button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+    cursor: pointer;
+}
+
 
 /* features */
 

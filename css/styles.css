@@ -288,158 +288,6 @@ textarea {
     background-color: var(--about-backgraund-color);
 }
 
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    
-    width: 100%;
-    height: 100%;
-
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-}
-/* Modal screen*/
-    .modal {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 40px;
-
-        min-width: 528px;
-        min-height: 581px;
-
-            background-color: var(--background-color);
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            border-radius: 4px;
-
-    }
-
-    .modal-button {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        top: 8px;
-        right: 8px;
-
-        width: 30px;
-        height: 30px;
-
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        border-radius: 50%;
-        background-color: var(--background-color);
-        fill: var(--studio-nav-color);
-}
-
-            .modal-close-icon:hover,
-            .modal-close-icon:focus {
-            color: var(--link-color);
-            }
-
-.modal-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-
-    margin: 0;
-    margin-bottom: 12px;
-    padding: 0;
-
-    columns: var(--text-color);
-}
-
-.form {
-    width: 528px;
-    height: 581px;
-    
-}
-
-.form-field {
-display: flex;
-position: relative;
-flex-direction: column;
-
-text-align: left;
-}
-
-.form-comment{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-bottom: 20px;
-    
-    }
-
-.comment-area {
-    padding: 6px 15px;
-
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    cursor: pointer;
-    }
-
-.form-field input {
-    margin: 0;
-    padding: 6px 35px;
-    margin-bottom: 10px;
-
-    height: 40px;
-
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    cursor: pointer;
-   }
-
-                .form-field input:hover,
-                .form-field input:focus {
-                        color: var(--link-color);
-                }
-
-.form-field label {
-    margin-bottom: 4px;
-}
-
-.form-field input::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-} 
-
-.label-link {
-color: var(--link-color);
-}
-
-.modal-icon {
-position: absolute;
-left: 15px;
-top: 42px;
-fill: currentColor;
-}
-
-.submit-button {
-    margin-top: 30px;
-    padding: 10px 52px;
-
-    width: 200px;
-    height: 50px;
-
-    letter-spacing: 0.06em;
-
-    color: var(--background-color);
-    background-color: var(--main-button-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-
-    cursor: pointer;
-}
-
 
 /* features */
 
@@ -657,6 +505,213 @@ display: flex;
                 fill: var(--link-color);
                 border-color: var(--link-color);
             }
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Modal screen*/
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+
+    min-width: 528px;
+    min-height: 581px;
+
+    background-color: var(--background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+}
+
+.modal-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    fill: var(--studio-nav-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+    .modal-button:hover,
+    .modal-button:focus {
+        fill: var(--link-color);
+    }
+
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 0;
+
+    columns: var(--text-color);
+}
+
+.form {
+    width: 528px;
+    height: 581px;
+
+}
+
+.form-field {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    text-align: left;
+}
+
+.form-comment {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+.comment-area {
+    padding: 6px 15px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-field input {
+    margin: 0;
+    padding: 6px 35px;
+    margin-bottom: 10px;
+
+    height: 40px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+        .form-field:focus-within > .modal-icon {
+            fill: var(--link-color);
+        }
+
+                .form-field:focus-within > .form-input {
+                    outline: 1px solid var(--link-color);
+                }
+
+                    .form-comment:focus-within > .comment-area {
+                    outline: 1px solid var(--link-color);
+                }
+
+.form-field label {
+    margin-bottom: 4px;
+}
+
+.form-field input::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.label-link {
+    color: var(--link-color);
+}
+
+.modal-icon {
+    position: absolute;
+    left: 15px;
+    top: 42px;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 10px 52px; */
+
+    width: 200px;
+    height: 50px;
+
+    letter-spacing: 0.06em;
+
+    color: var(--background-color);
+    background-color: var(--main-button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+    cursor: pointer;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    box-shadow: 0px 4px 4px var(--box-shadow-main-button);
+    border-radius: 4px
+}
+
+.checkbox {
+   /* Візуально приховуємо чекбокс */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.label-checkbox {
+    display: flex;
+    align-items: center;
+    }
+
+.icon {
+    display: inline-block;
+    margin-right: 10px;
+
+        width: 15px;
+        height: 15px;
+        border: 2px solid var(--text-color);
+        border-radius: 4px;
+}
+
+.checkbox:checked + .icon {
+    background-color: var(--link-color);
+    background-image: url('../images/check-mark.png');
+    background-size: contain;
+    background-origin: border-box;
+    border-color: var(--link-color);
+
+}
 
 /* Portfolio */
 
@@ -941,5 +996,75 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
             background-color: var(--link-color);
             }
 
+.subscription {
+display: inline-block;
+flex-direction: column;
+margin-left: 93px;
+}
 
+.subscription-text {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--background-color);
 
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+
+    color: var(--background-color);
+}
+
+.subscription-field {
+    display: flex;
+    flex-direction: row;
+align-items: baseline;
+}
+
+.subscription input {
+    margin: 0;
+    padding: 15px 16px;
+
+    height: 50px;
+    width: 358px;
+
+    background-color: var(--social-actions-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.subscription-button {
+    display: flex;
+    position: relative;
+    margin-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+
+        width: 200px;
+        height: 50px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: var(--background-color);
+        background-color: var(--link-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+}
+
+.subscription-button::after {
+    display: flex;
+    content: "";
+    margin-left: 10px;
+   }
+
+.subscription-icon {
+fill: var(--background-color);
+margin-left: 10px;
+}

@@ -565,15 +565,19 @@ display: flex;
 
 
 .modal-title {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+
+    margin: auto;
+    margin-bottom: 12px;
+    padding: 0;
+
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
 
-    margin: 0;
-    margin-bottom: 12px;
-    padding: 0;
-
-    columns: var(--text-color);
+    color: var(--text-color);
 }
 
 .form {
@@ -664,7 +668,6 @@ display: flex;
 
     color: var(--background-color);
     background-color: var(--main-button-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
 
@@ -692,6 +695,7 @@ display: flex;
 .label-checkbox {
     display: flex;
     align-items: center;
+    justify-content: center;
     }
 
 .icon {
@@ -999,7 +1003,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 .subscription {
 display: inline-block;
 flex-direction: column;
-margin-left: 93px;
+margin: 0 auto;
 }
 
 .subscription-text {
@@ -1017,7 +1021,7 @@ margin-left: 93px;
 .subscription-field {
     display: flex;
     flex-direction: row;
-align-items: baseline;
+    align-items: baseline;
 }
 
 .subscription input {
@@ -1026,7 +1030,9 @@ align-items: baseline;
 
     height: 50px;
     width: 358px;
+    font-size: 16px;
 
+    color: var(--background-color);
     background-color: var(--social-actions-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1068,3 +1074,4 @@ align-items: baseline;
 fill: var(--background-color);
 margin-left: 10px;
 }
+
